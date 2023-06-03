@@ -10,6 +10,14 @@
  * @param {number} n
  * @return {ListNode}
  */
+
+class ListNode {
+    constructor(val, next) {
+      this.val = (val === undefined ? 0 : val);
+      this.next = (next === undefined ? null : next);
+    }
+  }
+  
 var removeNthFromEnd = function(head, n) {
     let fals = new ListNode(0);
     fals.next = head;
@@ -27,4 +35,4 @@ var removeNthFromEnd = function(head, n) {
     return fals.next;
 };
 
-module.exports = {removeNthFromEnd}
+module.exports = {removeNthFromEnd, ListNode};
