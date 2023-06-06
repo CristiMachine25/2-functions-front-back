@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const PORT = 3000;
 
- app.use(express.json());
+app.use(express.json())
 
  app.post('/api/removeNthFromEnd', (req, res) => {
    const { head, n } = req.body;
@@ -12,7 +12,6 @@ const PORT = 3000;
 
    res.json(result);
 });
-
 
 app.listen(
     PORT,
