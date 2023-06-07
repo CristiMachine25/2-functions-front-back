@@ -10,7 +10,6 @@
 -----------
 
 ## *The First Function removes the N-th node from the head to the tail of a list*
----
  To test this function using **UNITTEST**, execute the following command in the .`\server` folder:
 ```
 npm test
@@ -34,7 +33,6 @@ http://localhost:5000/api/removeNthFromEnd
 ------------
 
 ## *The Second Function calculates the maximum area between multiple vertical lines*
----
 To test this function using UNITTEST, execute the following command in the .`\server` folder:
 ```
 npm test
