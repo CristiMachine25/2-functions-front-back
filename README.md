@@ -1,15 +1,58 @@
-1. Prima functie: elimina al N-ulea nod de la cap la coada dintr-o lista.
-2. in terminal in folderul .\server se poate executa comanda folosind "npm test" pentru a verifica functia folosind UNITTEST.
-3. in terminal in folderul .\server se executa comanda folosind "node ." sau "node server" pentru a porni partea de backend. Folosind o aplicatie de ex. Insomnia se poate verifica cererea POST. (port 5000)
-4. in terminal in folderul .\server se executa comanda folosind "node ." sau "node server" pentru a porni partea de backend. in terminalul folderului .\client se executa comanda "npm start" pentru a porni partea de frontend. (port 3000 default)
+# RemoveNthFromTheEnd and MaxArea functions
+<br>
+<div align= "center">
+    The repository contains the two awesome✨functions & cool web development
+    beginner-friendly✌️!
+</div>
+<br>
+<br>
+
+-----------
+
+## *The First Function removes the N-th node from the head to the tail of a list*
+---
+ To test this function using **UNITTEST**, execute the following command in the .`\server` folder:
+```
+npm test
+```
+ ### **Backend**
+ To start the backend, run the following command in the `.\server` folder:
+ ```
+ node . or node server
+ ```
+ You can test the POST request using an application (ex. **Insomnia**) (port *5000*).
+
+ ### **Front-End**
+To start the frontend, run the following command in the `.\client` folder:
+```
+npm start
+```
+The default port is *3000*.
 
 http://localhost:5000/api/removeNthFromEnd
 
 ------------
 
-1. A doua functie: calculeaza aria maxima dintre mai multe linii verticale
-2. in terminal in folderul .\server se poate executa comanda folosind "npm test" pentru a verifica functia folosind UNITTEST.
-3. in terminal in folderul .\server se executa comanda folosind "node ." sau "node server" pentru a porni partea de backend. Folosind o aplicatie de ex. Insomnia se poate verifica cererea POST. (port 8080)
-4. in terminal in folderul .\server se executa comanda folosind "node ." sau "node server" pentru a porni partea de backend. in terminalul folderului .\client se executa comanda "npm start" pentru a porni partea de frontend. (port 3000 default)
+## *The Second Function calculates the maximum area between multiple vertical lines*
+---
+To test this function using UNITTEST, execute the following command in the .`\server` folder:
+```
+npm test
+```
+### **Backend**
+To start the backend, run the following command in the `.\server` folder:
+```
+node . or node server
+```
+You can test the POST request using an application (ex. **Insomnia**) (port *8080*).
+
+### **Front-End**
+To start the frontend, run the following command in the `.\client` folder:
+```
+npm start
+```
+The default port is *3000*.
 
 http://localhost:8080/api/maxArea
+
+---
