@@ -1,10 +1,9 @@
 # RemoveNthFromTheEnd and MaxArea functions
 <br>
-<div align= "center" style="font-size: 1.5rem;">
+<div align= "center" style="font-size: 150%;">
     The repository contains the two awesome✨functions & cool web development
     beginner-friendly✌️!
 </div>
-<br>
 <br>
 
 -----------
