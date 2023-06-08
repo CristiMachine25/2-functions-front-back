@@ -1,10 +1,11 @@
-const { removeNthFromEnd, ListNode } = require('../server/src');
+const { removeNthFromEnd, ListNode, maxArea } = require('../server/src');
 const express = require('express');
 const app = express();
 const PORT = 5000;
 
 app.use(express.json());
 
+//removeNthFromEnd API
 function arrayToLinkedList(arr) {
   if (arr.length === 0) return null;
   const head = new ListNode(arr[0]);
@@ -32,4 +33,20 @@ app.post('/api/removeNthFromEnd', (req, res) => {
   res.json(resultArray);
 });
 
-app.listen(PORT, () => console.log(`it's alive on http://localhost:${PORT}`));
+//maxArea API
+app.get('/api/maxArea', (req, res) =>{
+  const height = [1, 8, 6, 2, 5, 4, 8, 3, 7];
+  const result = maxArea(height);
+   res.json({ maxArea: result });
+});
+
+app.post('/api/maxArea', (req, res) => {
+  const height = req.body.height;
+  const result = maxArea(height);
+  res.json({ maxArea: result });
+});
+
+app.listen(
+  PORT,
+  () => console.log(`it's alive on http://localhost:${PORT}`)
+)

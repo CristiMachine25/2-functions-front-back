@@ -1,13 +1,9 @@
-const { removeNthFromEnd, ListNode} = require('../src');
+const { removeNthFromEnd, ListNode, maxArea} = require('../src');
 const expect = require('chai').expect;
 
-// describe('Suite 1', () => {
-//     it('removeNthFromEnd([1,2,3,4,5], 2) should return [1,2,3,5], 2', () => {
-//         expect(removeNthFromEnd([1,2,3,4,5], 2)).to.be.equal([1,2,3,5], 2);
-//     })
-// })
+//removeNthFromEnd tests
 
-describe('Suite 1', () => {
+describe('removeNthFromEnd(1)', () => {
     it('removeNthFromEnd([1, 2, 3, 4, 5], 2) should return [1, 2, 3, 5]', () => {
       // Create a linked list: 1 -> 2 -> 3 -> 4 -> 5
       const head = new ListNode(1);
@@ -28,7 +24,7 @@ describe('Suite 1', () => {
     });
   });
 
-  describe('removeNthFromEnd', () => {
+  describe('removeNthFromEnd(2)', () => {
     it('removeNthFromEnd([1], 1) should return []', () => {
       // Create a linked list: 1
       const head = new ListNode(1);
@@ -41,7 +37,7 @@ describe('Suite 1', () => {
     });
   });
   
-  describe('removeNthFromEnd', () => {
+  describe('removeNthFromEnd(3)', () => {
     it('removeNthFromEnd([1, 2], 1) should return [1]', () => {
       // Create a linked list: 1 -> 2
       const head = new ListNode(1);
@@ -56,4 +52,16 @@ describe('Suite 1', () => {
     });
   });
   
+//maxArea tests
 
+  describe('maxArea(1)', () => {
+    it('maxArea([1,8,6,2,5,4,8,3,7]) should return 49', () => {
+        expect(maxArea([1,8,6,2,5,4,8,3,7])).to.equal(49);
+    });
+  });
+
+describe('maxArea(2)', () => {
+    it('maxArea([1, 1]) should return 1', () => {
+        expect(maxArea([1,1])).eql(1);
+    });
+});
